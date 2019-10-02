@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="sv" dir="ltr">
+
+<head>
+    <title>Djupviks Hamn</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel%7CJulius+Sans+One%7CMerienda%7CRaleway&display=swap%7CViga&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Djupviks hamn</a></h1>
+        <nav>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="#" aria-haspopup="true">Om <img src="../css/images/triangle-arrow.png" alt="triangle arrow" /></a>
+                    <ul class="dropdown">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" aria-haspopup="true">Turism <img src="../css/images/triangle-arrow.png" alt="triangle arrow" /></a>
+                    <ul class="dropdown">
+                        <li><a href="gästplats.html">Gästplatser</a></li>
+                        <li><a href="turistmål.html">Turistmål</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li lang="en"><a href="english.html">In English<img src="../css/images/english-flag.png" width="50" height="25" alt="The flag of Great Britain" /></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flash">
+        <ul class="slideshow">
+            <li><span></span></li>
+            <li><span>2</span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
+    </div>
+    <main>
+        <section class="contact-form">
+            <h2>Kontaktformulär</h2>
+            <form enctype="text/plain" action="mailto:info@djupvikshamn.se" method="post">
+                <p>
+                    <label for="subject">Rubrik:</label>
+                    <input type="text" id="subject" name="rubrik" placeholder="Skriv rubrik för ärendet.." />
+                </p>
+                <p>
+                    <label for="topic" title="required">Välj ämne:</label>
+                    <select id="topic" name="subject">
+                        <option value="" disabled selected>Välj</option>
+                        <option value="boat place">Båtplats</option>
+                        <option value="member">Medlem</option>
+                        <option value="other">Övrigt</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message" title="required">*Meddelande:</label>
+                    <textarea id="message" name="text" placeholder="Beskrivning utav ärendet.." required></textarea>
+                </p>
+                <h3>Hur vill du bli kontaktad:</h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="e-post" checked="checked" name="contact" value="e-post" />
+                        <label for="e-post">E-post</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="telefon" name="contact" value="telefon" />
+                        <label for="telefon">Telefon</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="not" name="contact" value="inte alls" />
+                        <label for="not">Inte alls</label>
+                    </li>
+                </ul>
+                <p>
+                    <label for="name" title="required">*Namn:</label>
+                    <input type="text" id="name" name="name" placeholder="Ditt namn och efternamn.." required />
+                </p>
+                <p>
+                    <label for="email" title="required">*E-post:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.se" required />
+                </p>
+                <p>
+                    <label for="tel" title="required">*Telefonnummer:</label>
+                    <input type="tel" id="tel" name="telefonnummer" placeholder="+46XX-XXX XX XX" required />
+                </p>
+                <p>
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Skicka" />
+                </p>
+            </form>
+        </section>
+        <section class="contact">
+            <h2>Kontaktuppgifter</h2>
+            <address>
+                Hamnfogde Bo Lautin, <br />
+                mobil <a href="tel:+46707920310">070-792-03 10</a><br />
+                Djupviks hamnförening <br />
+                c/o Ekholm <br />
+                Eksta Hägur 170 <br />
+                623 54 Klintehamn <br />
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34505.02622536034!2d18.12262579445872!3d57.28116814991391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f79d7827227889%3A0xb4b44c9379c9e1d1!2sEKSTA+H%C3%84GUR+170%2C+623+54+Klintehamn!5e0!3m2!1ssv!2sse!4v1565687412525!5m2!1ssv!2sse" width="500" height="350" allowfullscreen></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <section class="footer-mail">
+                <h2><i class="fas fa-envelope"></i> Mejla oss</h2>
+                <p>Skicka meddelande till <a href="mailto:info@djupvikshamn.se">info@djupvikshamn.se</a></p>
+            </section>
+            <section class="footer-social">
+                <h2><i class="fas fa-users"></i> Djupvik på sociala medier</h2>
+                <p> <a href="#"><i class="fab fa-facebook fa-3x"></i></a> <a href="#"><i class="fab fa-instagram fa-3x"></i></a></p>
+            </section>
+        </div>
+        <p class="copyright">Copyright &copy; Djupvikshamn.se 2019</p>
+    </footer>
+</body>
+
+</html>

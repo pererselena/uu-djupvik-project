@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="sv" dir="ltr">
+
+<head>
+    <title>Djupviks Hamn</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel%7CJulius+Sans+One%7CMerienda%7CRaleway&display=swap%7CViga&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" />
+    <script type="module" src="../js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Djupviks hamn</a></h1>
+        <nav>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="#" aria-haspopup="true">Om <img src="../css/images/triangle-arrow.png" alt="triangle arrow" /></a>
+                    <ul class="dropdown">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" aria-haspopup="true" class="active">Turism <img src="../css/images/triangle-arrow.png" alt="triangle arrow" /></a>
+                    <ul class="dropdown">
+                        <li><a href="gästplats.html" class="active">Gästplatser</a></li>
+                        <li><a href="turistmål.html">Turistmål</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li lang="en"><a href="english.html">In English<img src="../css/images/english-flag.png" width="50" height="25" alt="The flag of Great Britain" /></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flash">
+        <ul class="slideshow">
+            <li><span></span></li>
+            <li><span>2</span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <aside class="weather">
+            <div id="smhi-widget">
+            </div>
+        </aside>
+        <main>
+            <article class="price">
+                <h2>Gästhamnen</h2>
+                <p>Gästbåtar är hjärtligt välkomna!</p>
+                <p>Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten och el finns utdraget på kajerna. I land kan vi erbjuda ett modernt servicehus med WC, dusch och tvättmaskin.</p>
+                <p>Ring gärna hamnfogden för att få reda på aktuellt läge.</p>
+                <ul>
+                    <li>Dygnshyra 150:- /dygn*</li>
+                    <li>El-anslutning 50:-/dygn</li>
+                </ul>
+                <p>*inkluderat kort för tillträde till servicehuset och 20:- för två duschar</p>
+                <p>Hamnfogde Bo Lautin Mobil:<a href="tel:+4670-7920310">070-792 03 10</a></p>
+            </article>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <section class="footer-mail">
+                <h2><i class="fas fa-envelope"></i> Mejla oss</h2>
+                <p>Skicka meddelande till <a href="mailto:info@djupvikshamn.se">info@djupvikshamn.se</a></p>
+            </section>
+            <section class="footer-social">
+                <h2><i class="fas fa-users"></i> Djupvik på sociala medier</h2>
+                <p> <a href="#"><i class="fab fa-facebook fa-3x"></i></a> <a href="#"><i class="fab fa-instagram fa-3x"></i></a></p>
+            </section>
+        </div>
+        <p class="copyright">Copyright &copy; Djupvikshamn.se 2019</p>
+    </footer>
+</body>
+
+</html>
